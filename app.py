@@ -232,7 +232,7 @@ def render_holt_winters_controls() -> HoltWintersConfig:
 
         st.caption("These are optional tuning inputs. We prefill them with practical starting values so you can adjust from there.")
 
-        smoothing_level = st.text_input("smoothing_level (alpha)", value="0.20")
+        smoothing_level = st.text_input("smoothing_level (alpha)", value="0.40")
         st.caption("How fast the model reacts to new level changes.")
 
         smoothing_trend = st.text_input("smoothing_trend (beta)", value="0.10")
